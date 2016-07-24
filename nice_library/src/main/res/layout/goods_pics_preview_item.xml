@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nice.com.nice_library.nice_view.photoview.HackyDrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <nice.com.nice_library.nice_view.photoview.PhotoView
+            android:id="@+id/img_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+</nice.com.nice_library.nice_view.photoview.HackyDrawerLayout>
