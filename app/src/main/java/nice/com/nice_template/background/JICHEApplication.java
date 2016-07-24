@@ -41,12 +41,12 @@ public class JICHEApplication extends CoreApplication {
     private SQLiteDatabase db;
     private Account account;
 
-    private final String kTalkingdataAppID = "81B6D9CF811B6C215EB6DFEDD1CC190E";
+//    private final String kTalkingdataAppID = "81B6D9CF811B6C215EB6DFEDD1CC190E";
 
     public final String kPageSize = "pageSize";
     public final String kPage = "pageNumber";
 
-    public final String kWeChatAppID = "wx4973ddb02ce5a03a";
+//    public final String kWeChatAppID = "wx4973ddb02ce5a03a";
     private IWXAPI api;
 
     private boolean is_develop_flag = true;
@@ -89,8 +89,8 @@ public class JICHEApplication extends CoreApplication {
 
     private void initWXAPI() {
         //微信api
-        api = WXAPIFactory.createWXAPI(this, kWeChatAppID, false);
-        api.registerApp(kWeChatAppID);
+//        api = WXAPIFactory.createWXAPI(this, kWeChatAppID, false);
+//        api.registerApp(kWeChatAppID);
     }
 
     private void initTalkingData() {
@@ -98,7 +98,7 @@ public class JICHEApplication extends CoreApplication {
         TCAgent.LOG_ON = true;
         // App ID: 在TalkingData创建应用后，进入数据报表页中，在“系统设置”-“编辑应用”页面里查看App ID。
         // 渠道 ID: 是渠道标识符，可通过不同渠道单独追踪数据。
-        TCAgent.init(getApplicationContext(), kTalkingdataAppID, AppInfo.qudao_code);
+//        TCAgent.init(getApplicationContext(), kTalkingdataAppID, AppInfo.qudao_code);
         //正式打包后才开启上报错误
 //        if (!BuildConfig.LOG_DEBUG) {
 //            TCAgent.setReportUncaughtExceptions(true);

@@ -10,7 +10,6 @@ public class BaseBean implements Serializable{
 	public int getIsSuccess() {
 		return isSuccess;
 	}
-
 	public void setIsSuccess(int isSuccess) {
 		this.isSuccess = isSuccess;
 	}

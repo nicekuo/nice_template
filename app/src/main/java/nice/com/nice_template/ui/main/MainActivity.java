@@ -91,12 +91,12 @@ public class MainActivity extends AbstractActivity {
         this.isTemplate = false;
         super.onCreate(savedInstanceState);
 
-//        Intent intent = getIntent();
-//        if (intent != null) {
-//            IntentParseUtil.getInstance().parseIntentType(intent, MainActivity.this);
-//        }
-//        registerBroadCastReceiver();
-//        initPushSDK();
+        Intent intent = getIntent();
+        if (intent != null) {
+            IntentParseUtil.getInstance().parseIntentType(intent, MainActivity.this);
+        }
+        registerBroadCastReceiver();
+        initPushSDK();
     }
 
     @Override
@@ -145,16 +145,12 @@ public class MainActivity extends AbstractActivity {
 
     @AfterViews
     void init() {
-
-
         findViewById(R.id.id_home_fragment).postDelayed(new Runnable() {
             @Override
             public void run() {
                 doShowFragment(HOME_CONST);
             }
         },500);
-
-
 //        splashLayout.postDelayed(new Runnable() {
 //            @Override
 //            public void run() {

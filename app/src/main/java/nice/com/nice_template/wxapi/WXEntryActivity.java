@@ -31,8 +31,8 @@ public class WXEntryActivity extends AbstractActivity implements IWXAPIEventHand
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        api = WXAPIFactory.createWXAPI(this, JICHEApplication.getInstance().kWeChatAppID);
-        api.handleIntent(getIntent(), this);
+//        api = WXAPIFactory.createWXAPI(this, JICHEApplication.getInstance().kWeChatAppID);
+//        api.handleIntent(getIntent(), this);
     }
 
     @Override
